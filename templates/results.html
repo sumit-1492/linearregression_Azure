@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Air Temperature from regression model</div>
+
+      <p>The Air temperature is {{temp}} kelvin</p>
+</div>
+
+</body>
+
+<body>
+   <div class="table-users">
+       <div class="header">Profile Report</div>
+        <div class="form">
+            <form action="/report" method="POST">
+                <label for="pr">Profile_Report: </label>
+                <select name="pr" id="pr">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+                    <input type="submit" value="submit">
+                </form>
+        </div>
+</div>
+
+</body>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">R^2</div>
+      <p>The accuracy by R square method is 77.405%</p>
+</div>
+
+</body>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Adjusted R^2</div>
+      <p>The accuracy by Adjusted R square method is 77.199%</p>
+</div>
+
+</body>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">LASSO</div>
+      <p>The accuracy by LASSO method is 77.407%</p>
+</div>
+
+</body>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">RidgeCv</div>
+      <p>The accuracy by RidgeCv method is 77.405%</p>
+</div>
+
+</body>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Elastic net</div>
+      <p>The accuracy by RidgeCv method is 77.237%</p>
+</div>
+
+</body>
+
+</html>
